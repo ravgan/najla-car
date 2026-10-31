@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Najla.Car | Showroom Mobil Bekas Berkualitas</title>
+<meta name="description" content="Katalog mobil bekas terawat. Konsultasi gratis lewat WhatsApp, telepon, atau email.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#05070d;--p:rgba(255,255,255,.045);--ln:rgba(120,200,255,.18);--cy:#22d3ee;--vi:#8b5cf6;--mg:#f43f5e;--tx:#e6ecf5;--rd:#8d99ad;--h:"Chakra Petch",system-ui,sans-serif;--i:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 var(--i);color:var(--tx);background:var(--bg);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(700px 500px at 85% -5%,#8b5cf633,transparent),radial-gradient(600px 500px at 0% 40%,#22d3ee1f,transparent)}
+a{color:inherit}:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:30;background:#05070dcc;backdrop-filter:blur(12px);border-bottom:1px solid var(--ln)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font:700 20px var(--h);text-decoration:none;letter-spacing:.08em}.logo span{color:var(--cy);text-shadow:0 0 14px var(--cy)}
+.bar nav{display:flex;gap:22px;font-size:15px}.bar nav a{text-decoration:none;color:var(--rd);transition:color .2s}.bar nav a:hover{color:var(--cy)}
+/* hero */
+.hero{position:relative;padding:70px 0 40px;overflow:hidden}
+.hero::after{content:"";position:absolute;left:-20%;right:-20%;bottom:0;height:260px;background:repeating-linear-gradient(90deg,#22d3ee22 0 1px,transparent 1px 60px),repeating-linear-gradient(0deg,#22d3ee22 0 1px,transparent 1px 40px);transform:perspective(300px) rotateX(62deg);transform-origin:bottom;mask-image:linear-gradient(transparent,#000);-webkit-mask-image:linear-gradient(transparent,#000);z-index:-1}
+.hg{display:grid;grid-template-columns:1.05fr 1fr;gap:20px;align-items:center}
+.tag{display:inline-flex;align-items:center;gap:8px;font:500 13px var(--i);color:var(--cy);border:1px solid var(--ln);padding:5px 12px;border-radius:30px;background:var(--p);margin-bottom:20px}
+.tag i{width:8px;height:8px;border-radius:50%;background:var(--cy);box-shadow:0 0 10px var(--cy);animation:kedip 1.6s infinite}
+@keyframes kedip{50%{opacity:.25}}
+.hero h1{font:700 clamp(36px,6.4vw,68px)/1.04 var(--h);margin:0 0 18px}
+.hero h1 span{background:linear-gradient(90deg,var(--cy),var(--vi));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:18px;color:var(--rd);max-width:30em;margin:0 0 28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 24px;border:1px solid transparent;border-radius:8px;background:linear-gradient(90deg,var(--cy),var(--vi));color:#04060b;font:600 15px var(--i);text-decoration:none;cursor:pointer;transition:transform .15s,box-shadow .25s}
+.btn:hover{box-shadow:0 0 26px #22d3ee66}.btn:active{transform:scale(.97)}
+.btn.gl{background:var(--p);color:var(--tx);border-color:var(--ln)}.btn.gl:hover{border-color:var(--cy);box-shadow:0 0 20px #22d3ee33}
+.btn.wa{background:#16a34a;color:#fff}
+.mobilhero{position:relative;color:var(--cy)}
+.mobilhero svg{width:100%;filter:drop-shadow(0 0 22px #22d3ee66);animation:melayang 5s ease-in-out infinite}
+@keyframes melayang{50%{transform:translateY(-10px)}}
+.garis-k{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#22d3ee,transparent);opacity:.6;animation:lari 3s linear infinite}
+@keyframes lari{from{transform:translateX(-60%)}to{transform:translateX(60%)}}
+.stat{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px}
+.stat div{flex:1 1 150px;border:1px solid var(--ln);background:var(--p);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--rd)}
+.stat b{display:block;font:600 17px var(--h);color:var(--tx)}
+.masuk{opacity:0;transform:translateY(20px);animation:m .8s ease forwards}.k2{animation-delay:.12s}.k3{animation-delay:.24s}.k4{animation-delay:.36s}
+@keyframes m{to{opacity:1;transform:none}}
+section{padding:64px 0}h2{font:700 clamp(26px,4vw,38px) var(--h);margin:0 0 8px}.lead{color:var(--rd);margin:0 0 28px;max-width:40em}
+.rev{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rev.on{opacity:1;transform:none}
+/* alat */
+.alat{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+input,select,textarea{font:15px var(--i);padding:11px 14px;border:1px solid var(--ln);border-radius:8px;background:#0b1020;color:var(--tx);width:100%}
+.alat input{flex:1 1 220px;width:auto}.alat select{width:auto}
+select option{background:#0b1020}
+.jml{font-size:14px;color:var(--rd);margin:0 0 14px}
+/* kartu */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:20px;perspective:900px}
+.mobil{position:relative;background:linear-gradient(160deg,#ffffff0d,#ffffff04);border:1px solid var(--ln);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .15s ease-out,border-color .3s,box-shadow .3s;will-change:transform}
+.mobil:hover{border-color:var(--cy);box-shadow:0 0 30px #22d3ee33}
+.mobil::before,.mobil::after{content:"";position:absolute;width:14px;height:14px;border:2px solid var(--cy);opacity:.7}
+.mobil::before{top:8px;left:8px;border-right:0;border-bottom:0}.mobil::after{bottom:8px;right:8px;border-left:0;border-top:0}
+.foto{height:155px;display:grid;place-items:center;color:var(--c);background:radial-gradient(circle at 50% 100%,color-mix(in srgb,var(--c) 40%,transparent),transparent 70%)}
+.foto svg{width:76%;filter:drop-shadow(0 0 14px var(--c))}
+.mb{padding:14px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.mb h3{font:600 20px var(--h);margin:0}.thn{font:500 13px var(--i);color:var(--cy)}
+.spek{display:flex;flex-wrap:wrap;gap:6px}.spek span{font-size:12.5px;border:1px solid var(--ln);padding:3px 10px;border-radius:6px;color:var(--rd)}
+.hrg{font:700 24px var(--h);margin-top:auto;text-shadow:0 0 18px #22d3ee55}
+.aks{display:flex;gap:8px}.aks .btn{flex:1;padding:10px}
+.kosong{padding:40px;text-align:center;color:var(--rd);border:1px dashed var(--ln);border-radius:12px}
+/* simulasi */
+.sim{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;border:1px solid var(--ln);background:var(--p);border-radius:16px;padding:32px}
+.sim label{display:block;font-size:14px;color:var(--rd);margin-bottom:16px}.sim label input,.sim label select{margin-top:5px}
+input[type=range]{padding:0;accent-color:var(--cy);background:none;border:0}
+.ring{--p:25;width:min(260px,100%);aspect-ratio:1;margin:0 auto;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--cy) calc(var(--p)*1%),#1a2238 0);box-shadow:0 0 40px #22d3ee33;transition:background .3s}
+.ring div{width:84%;aspect-ratio:1;border-radius:50%;background:var(--bg);display:grid;place-content:center;text-align:center;padding:10px}
+.ring small{color:var(--rd);font-size:13px}.ring output{display:block;font:700 clamp(20px,3.4vw,27px) var(--h);color:var(--cy);text-shadow:0 0 16px var(--cy)}
+.rin{text-align:center;color:var(--rd);font-size:14px;margin:16px 0}
+.cat{font-size:13px;color:var(--rd);text-align:center;margin-top:12px}
+/* langkah */
+.lg{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;counter-reset:l}
+.lg div{counter-increment:l;border:1px solid var(--ln);background:var(--p);border-radius:12px;padding:20px;transition:transform .3s,border-color .3s}
+.lg div:hover{transform:translateY(-6px);border-color:var(--vi)}
+.lg div::before{content:"0" counter(l);font:700 30px var(--h);background:linear-gradient(90deg,var(--cy),var(--vi));-webkit-background-clip:text;background-clip:text;color:transparent;display:block}
+.lg h3{font:600 18px var(--h);margin:4px 0}.lg p{margin:0;font-size:14.5px;color:var(--rd)}
+/* kontak */
+.kol{display:grid;grid-template-columns:1.2fr 1fr;gap:32px}
+.panel{border:1px solid var(--ln);background:var(--p);border-radius:16px;padding:26px}
+form{display:grid;gap:12px}label.f{font-size:14px;color:var(--rd)}label.f input,label.f textarea{margin-top:4px}
+textarea{min-height:100px;resize:vertical}
+.jalur{display:grid;gap:10px;align-content:start}.jalur p{font-size:14px;color:var(--rd);margin:6px 0 0}
+footer{border-top:1px solid var(--ln);color:var(--rd);font-size:14px;padding:26px 0;margin-top:30px}
+dialog{border:1px solid var(--ln);border-radius:16px;padding:0;max-width:520px;width:calc(100% - 32px);background:#0b1020;color:var(--tx);box-shadow:0 0 60px #22d3ee33}
+dialog::backdrop{background:#000b;backdrop-filter:blur(4px)}
+.dl{padding:24px}.dl h3{font:700 26px var(--h);margin:0}.dl ul{padding-left:18px;color:var(--rd);margin:12px 0}
+.tut{float:right;border:1px solid var(--ln);background:var(--p);color:var(--tx);width:36px;height:36px;border-radius:50%;font-size:20px;cursor:pointer}
+@media(max-width:800px){.hg,.sim,.kol{grid-template-columns:1fr}.bar nav{display:none}.hero{padding-top:44px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}.masuk,.rev{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="w bar">
+<a class="logo" href="#">NAJLA<span>.</span>CAR</a>
+<nav><a href="#katalog">Katalog</a><a href="#simulasi">Simulasi</a><a href="#cara">Cara beli</a><a href="#kontak">Kontak</a></nav>
+</div></header>
+
+<div class="hero"><div class="w hg">
+<div>
+<div class="tag masuk"><i></i>Unit terbaru siap dilihat</div>
+<h1 class="masuk k2">Mobil bekas terawat, <span>transaksi jelas.</span></h1>
+<p class="masuk k3">Lihat kondisi dan harga, hitung cicilan sendiri, lalu hubungi kami lewat jalur yang paling nyaman.</p>
+<div class="masuk k4"><a class="btn" href="#katalog">Jelajahi katalog</a> <a class="btn gl" href="#simulasi">Hitung cicilan</a></div>
+</div>
+<div class="mobilhero masuk k3" id="mh"><div class="garis-k" style="top:30%"></div><div class="garis-k" style="top:70%;animation-delay:1.2s"></div></div>
+</div>
+<div class="w stat masuk k4"><div><b>Surat lengkap</b>Dicek sebelum dipajang</div><div><b>Cek langsung</b>Jadwalkan kunjungan</div><div><b>Konsultasi gratis</b>WhatsApp, telepon, email</div></div>
+</div>
+
+<section id="katalog"><div class="w rev">
+<h2>Katalog mobil</h2>
+<p class="lead">Cari berdasarkan nama atau merek, lalu urutkan sesuai anggaran. Klik Detail untuk melihat kondisi lengkap.</p>
+<div class="alat">
+<input id="cari" type="search" placeholder="Cari mobil, misalnya Avanza" aria-label="Cari mobil">
+<select id="merk" aria-label="Merek"><option value="">Semua merek</option></select>
+<select id="urut" aria-label="Urutkan"><option value="a">Harga terendah</option><option value="b">Harga tertinggi</option><option value="c">Tahun terbaru</option></select>
+</div>
+<p class="jml" id="jml"></p>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section id="simulasi" style="padding-top:0"><div class="w rev">
+<h2>Simulasi cicilan</h2>
+<p class="lead">Geser pengaturannya dan lihat perkiraan cicilan berubah langsung.</p>
+<div class="sim">
+<div>
+<label>Harga mobil (Rp)<input id="sh" type="number" value="200000000" min="0" step="1000000"></label>
+<label>Uang muka (DP): <b id="dpv">25</b>%<input id="sd" type="range" min="10" max="70" value="25"></label>
+<label>Tenor<select id="st"><option value="1">1 tahun</option><option value="2">2 tahun</option><option value="3" selected>3 tahun</option><option value="4">4 tahun</option><option value="5">5 tahun</option></select></label>
+<label>Bunga flat per tahun (%)<input id="sb" type="number" value="8" min="0" step="0.5"></label>
+</div>
+<div>
+<div class="ring" id="ring"><div><small>Cicilan per bulan</small><output id="cic">-</output></div></div>
+<div class="rin" id="rin"></div>
+<a class="btn" id="tanya" href="#kontak" style="display:flex">Tanyakan simulasi ini</a>
+<p class="cat">Estimasi saja. Angka resmi mengikuti perusahaan pembiayaan.</p>
+</div>
+</div>
+</div></section>
+
+<section id="cara" style="padding-top:0"><div class="w rev">
+<h2>Cara membeli</h2>
+<p class="lead">Lima langkah singkat dari memilih sampai membawa pulang.</p>
+<div class="lg">
+<div><h3>Pilih mobil</h3><p>Telusuri katalog dan tentukan unit favorit.</p></div>
+<div><h3>Hubungi kami</h3><p>Lewat WhatsApp, telepon, email, atau formulir.</p></div>
+<div><h3>Lihat dan coba</h3><p>Jadwalkan cek unit dan test drive.</p></div>
+<div><h3>Booking dan DP</h3><p>Sepakati harga, lalu kunci unit dengan DP.</p></div>
+<div><h3>Serah terima</h3><p>Urus surat, lunasi, dan bawa pulang.</p></div>
+</div>
+</div></section>
+
+<section id="kontak" style="padding-top:0"><div class="w rev">
+<h2>Hubungi kami</h2>
+<p class="lead">Pilih jalur yang paling nyaman. Semua dibalas secepatnya.</p>
+<div class="kol">
+<form id="form" class="panel">
+<label class="f">Nama<input id="fn" required></label>
+<label class="f">Mobil yang diminati<input id="fm" placeholder="Contoh: Toyota Avanza 2019"></label>
+<label class="f">Pesan<textarea id="fp" required></textarea></label>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn wa" type="submit" data-via="wa">Kirim via WhatsApp</button><button class="btn gl" type="submit" data-via="em">Kirim via email</button></div>
+</form>
+<div class="jalur panel">
+<a class="btn wa" id="wa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn gl" href="tel:+6281310982764">Telepon: 0813 1098 2764</a>
+<a class="btn gl" href="mailto:ravigani10@gmail.com">ravigani10@gmail.com</a>
+<p>Jam layanan: 08:00 - 19:00<br>Alamat showroom: Kutabumi</p>
+</div>
+</div>
+</div></section>
+
+<footer><div class="w">&copy; <span id="th">2026</span> Najla.Car. Harga dan ketersediaan dapat berubah sewaktu-waktu.</div></footer>
+<dialog id="dlg"><div class="dl" id="dlc"></div></dialog>
+
+<script>
+// ====== DATA (contoh, ganti dengan mobil Anda) ======
+var NOMOR="6281310982764", EMAIL="ravigani10@gmail.com";
+var mobil=[
+{n:"Toyota Avanza 1.3 G",m:"Toyota",t:2019,km:48000,tr:"Manual",bb:"Bensin",h:165000000,w:"#f43f5e",c:["Servis rutin","Pajak hidup","Interior bersih"]},
+{n:"Honda Brio Satya E",m:"Honda",t:2020,km:32000,tr:"Otomatis",bb:"Bensin",h:152000000,w:"#3b82f6",c:["Irit BBM","Ban baru","Satu tangan"]},
+{n:"Daihatsu Xenia 1.3 R",m:"Daihatsu",t:2018,km:61000,tr:"Manual",bb:"Bensin",h:128000000,w:"#a3a3b8",c:["Mesin halus","AC dingin","Surat lengkap"]},
+{n:"Suzuki Ertiga GX",m:"Suzuki",t:2021,km:27000,tr:"Otomatis",bb:"Bensin",h:210000000,w:"#10b981",c:["Kondisi seperti baru","Buku servis","Kabin lega"]},
+{n:"Toyota Innova 2.4 G",m:"Toyota",t:2017,km:88000,tr:"Manual",bb:"Diesel",h:245000000,w:"#8b5cf6",c:["Tangguh jarak jauh","Servis resmi","Kaki-kaki baik"]},
+{n:"Honda HR-V 1.5 S",m:"Honda",t:2019,km:44000,tr:"Otomatis",bb:"Bensin",h:238000000,w:"#f59e0b",c:["Fitur lengkap","Pajak hidup","Tidak banjir"]}
+];
+// ====== LOGIKA ======
+var $=function(i){return document.getElementById(i)};
+var rp=function(x){return "Rp "+new Intl.NumberFormat("id-ID").format(Math.round(x))};
+var car='<svg viewBox="0 0 200 90" aria-hidden="true"><path d="M8 64c0-8 8-12 22-14l28-6c12-12 26-18 46-18h26c14 0 26 8 36 20l16 6c6 2 8 6 8 12z" fill="currentColor" opacity=".9"/><path d="M80 28h36c10 0 18 6 26 16H62c4-8 10-14 18-16z" fill="#05070d" opacity=".6"/><ellipse cx="186" cy="54" rx="6" ry="3" fill="#fff"/><circle cx="52" cy="66" r="14" fill="#05070d"/><circle cx="148" cy="66" r="14" fill="#05070d"/><circle cx="52" cy="66" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="148" cy="66" r="9" fill="none" stroke="currentColor" stroke-width="2"/></svg>';
+var wa=function(t){return "https://wa.me/"+NOMOR+"?text="+encodeURIComponent(t)};
+$("th").textContent=new Date().getFullYear();
+$("wa").href=wa("Halo, saya ingin bertanya tentang mobil di showroom Anda.");
+$("mh").insertAdjacentHTML("afterbegin",car);
+var ms=[...new Set(mobil.map(function(x){return x.m}))].sort();
+ms.forEach(function(m){$("merk").insertAdjacentHTML("beforeend","<option>"+m+"</option>")});
+
+function tampil(){
+  var q=$("cari").value.toLowerCase().trim(),mk=$("merk").value,u=$("urut").value;
+  var d=mobil.filter(function(x){return(!mk||x.m===mk)&&(!q||x.n.toLowerCase().indexOf(q)>-1)});
+  d.sort(function(a,b){return u==="a"?a.h-b.h:u==="b"?b.h-a.h:b.t-a.t});
+  $("jml").textContent=d.length+" mobil ditemukan";
+  $("grid").innerHTML=d.length?d.map(function(x){var i=mobil.indexOf(x);
+    return '<article class="mobil"><div class="foto" style="--c:'+x.w+'">'+car+'</div><div class="mb"><div class="thn">Tahun '+x.t+'</div><h3>'+x.n+'</h3><div class="spek"><span>'+new Intl.NumberFormat("id-ID").format(x.km)+' km</span><span>'+x.tr+'</span><span>'+x.bb+'</span></div><div class="hrg">'+rp(x.h)+'</div><div class="aks"><button class="btn gl" data-d="'+i+'">Detail</button><a class="btn wa" target="_blank" rel="noopener" href="'+wa("Halo, saya tertarik dengan "+x.n+" tahun "+x.t+" ("+rp(x.h)+"). Apakah masih tersedia?")+'">Tanya</a></div></div></article>'}).join(""):'<div class="kosong">Tidak ada mobil yang cocok. Coba kata kunci lain atau hubungi kami untuk permintaan khusus.</div>';
+}
+["cari","merk","urut"].forEach(function(i){$(i).addEventListener("input",tampil)});tampil();
+
+// Efek miring kartu mengikuti kursor
+var gerak=!matchMedia("(prefers-reduced-motion: reduce)").matches&&matchMedia("(hover:hover)").matches;
+if(gerak){
+  $("grid").addEventListener("mousemove",function(e){var k=e.target.closest(".mobil");if(!k)return;var r=k.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;k.style.transform="rotateY("+x*8+"deg) rotateX("+(-y*8)+"deg) translateZ(6px)"});
+  $("grid").addEventListener("mouseout",function(e){var k=e.target.closest(".mobil");if(k)k.style.transform=""});
+}
+
+// Detail
+$("grid").addEventListener("click",function(e){var b=e.target.closest("[data-d]");if(!b)return;var x=mobil[b.dataset.d];
+  $("dlc").innerHTML='<button class="tut" aria-label="Tutup" onclick="document.getElementById(\'dlg\').close()">&times;</button><div class="foto" style="--c:'+x.w+'">'+car+'</div><h3>'+x.n+'</h3><div class="hrg" style="margin:4px 0">'+rp(x.h)+'</div><ul><li>Tahun '+x.t+', '+new Intl.NumberFormat("id-ID").format(x.km)+' km</li><li>'+x.tr+', '+x.bb+'</li>'+x.c.map(function(s){return"<li>"+s+"</li>"}).join("")+'</ul><div class="aks"><a class="btn wa" target="_blank" rel="noopener" href="'+wa("Halo, saya ingin booking/lihat "+x.n+" tahun "+x.t+". Bisa dijadwalkan?")+'">WhatsApp</a><a class="btn gl" href="tel:+'+NOMOR+'">Telepon</a><a class="btn gl" href="mailto:'+EMAIL+'?subject='+encodeURIComponent("Tanya "+x.n)+'">Email</a></div>';
+  $("dlg").showModal()});
+$("dlg").addEventListener("click",function(e){if(e.target===$("dlg"))$("dlg").close()});
+
+// Simulasi cicilan
+function hitung(){
+  var h=+$("sh").value||0,dp=+$("sd").value,t=+$("st").value,b=+$("sb").value||0;
+  $("dpv").textContent=dp;$("ring").style.setProperty("--p",dp);
+  var uang=h*dp/100,pokok=h-uang,bln=pokok*(1+b/100*t)/(t*12);
+  $("cic").textContent=rp(bln);
+  $("rin").innerHTML="DP "+rp(uang)+" &middot; Pokok "+rp(pokok)+" &middot; "+(t*12)+" bulan";
+}
+["sh","sd","st","sb"].forEach(function(i){$(i).addEventListener("input",hitung)});hitung();
+$("tanya").addEventListener("click",function(){$("fp").value="Halo, saya ingin simulasi cicilan untuk harga "+rp(+$("sh").value)+", DP "+$("sd").value+"%, tenor "+$("st").value+" tahun. Perkiraan cicilan "+$("cic").textContent+"."});
+
+// Formulir
+var via="wa";document.querySelectorAll("#form button").forEach(function(b){b.addEventListener("click",function(){via=b.dataset.via})});
+$("form").addEventListener("submit",function(e){e.preventDefault();
+  var s="Halo, saya "+$("fn").value+(($("fm").value)?". Saya tertarik dengan "+$("fm").value:"")+".\n\n"+$("fp").value;
+  if(via==="wa")window.open(wa(s),"_blank");else location.href="mailto:"+EMAIL+"?subject="+encodeURIComponent("Pertanyaan mobil")+"&body="+encodeURIComponent(s)});
+
+// Muncul saat scroll
+var io=new IntersectionObserver(function(l){l.forEach(function(i){if(i.isIntersecting)i.target.classList.add("on")})},{threshold:.1});
+document.querySelectorAll(".rev").forEach(function(e){io.observe(e)});
+</script>
+</body>
+</html>
